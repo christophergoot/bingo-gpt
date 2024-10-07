@@ -72,5 +72,24 @@ function adjustFontSize(element) {
 	}
 }
 
+function init() {
+	generateCard();
+
+	document.getElementById("download-pdf").addEventListener("click", () => {
+		const element = document.getElementById("card-container");
+
+		const opt = {
+			margin: 0,
+			filename: "bingo-card.pdf",
+			image: { type: "jpeg", quality: 0.98 },
+			html2canvas: { scale: 1, width: element.offsetWidth, height: element.offsetHeight },
+			jsPDF: { unit: "cm", format: "a5", orientation: "portrait" },
+		};
+
+		html2pdf().from(element).set(opt).save();
+		generateCard();
+	});
+}
+
 // Initial generation when page loads
-window.onload = generateCard;
+window.onload = init;

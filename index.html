@@ -7,17 +7,14 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<div class="container">
+		<div id="card-container" class="container">
 			<h1 class="card-title">B I N G O</h1>
 			<h2 id="bingo-title">Bingo Game</h1>
-			<div id="bingo-card">
-				<!-- The bingo card will be dynamically generated here -->
-			</div>
+			<div id="bingo-card"></div>
 		</div>
-
-		<!-- Load data first -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 		<script src="data.js"></script>
-		<!-- Then load the script that generates the bingo card -->
 		<script src="script.js"></script>
+		<button id="download-pdf">Download as PDF</button>
 	</body>
 </html>
