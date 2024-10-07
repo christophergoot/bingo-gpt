@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="bingo-title">Bingo Game</h1>
+        <div id="bingo-card">
+            <!-- The bingo card will be dynamically generated here -->
+        </div>
+        <button onclick="generateCard()">Reload</button>
+    </div>
+    
+    <!-- Load data first -->
+    <script src="data.js"></script>
+    <!-- Then load the script that generates the bingo card -->
+    <script src="script.js"></script>
+</body>
+</html>
