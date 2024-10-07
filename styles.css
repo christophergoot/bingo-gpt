@@ -17,12 +17,13 @@ body {
 
 .card-title {
 	font-size: 7em;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 #bingo-title {
 	font-size: 36px;
 	margin-bottom: 36px;
+	margin-top: 12px;
 }
 
 #bingo-card {
