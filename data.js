@@ -1,6 +1,10 @@
 const bingoConfig = {
 	title: "Happy Birthday, Amira!",
 	options: [
+		{ name: "That's Not My Name", description: "The Ting Tings" },
+		{ name: "Cruel Summer", description: "Taylor Swift" },
+		{ name: "Raspberry Beret", description: "Prince" },
+		{ name: "All Night Long (All Night) - Single Version", description: "Lionel Ritchie" },
 		{ name: "a thousand years", description: "Christina Perri" },
 		{ name: "Madre Tierra (Oye)", description: "Chayanne" },
 		{ name: "Call Me Maybe", description: "Carly Rae Jepsen" },
@@ -23,6 +27,8 @@ const bingoConfig = {
 		{ name: "Quiero un camión", description: "Loquillo Y Los Trogloditas" },
 		{ name: "House of Memories", description: "Panic! At The Disco" },
 		{ name: "Waka Waka (This Time for Africa)", description: "Shakira" },
+		{ name: "STAY (with Justin Bieber)", description: "The Kid LAROI" },
 	],
+	eventsCount: 0,
 	events: ["Cake cutting", "Opening presents", "Singing 'Happy Birthday'", "Gift bags for guests", "Group photo"],
 };

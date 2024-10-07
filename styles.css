@@ -44,6 +44,7 @@ body {
 	text-align: center;
 	width: 2.1cm;
 	height: 2.1cm;
+	border-radius: 5px;
 }
 
 .cell-name {
@@ -57,7 +58,15 @@ body {
 }
 
 .bingo-cell.free-space {
-	background-color: #f0e68c;
+	background-image: repeating-linear-gradient(
+		45deg,
+		#dcdcdc,
+		#dcdcdc 10px,
+		#e8e8e8 10px,
+		#e8e8e8 20px,
+		#f5f5f5 20px,
+		#f5f5f5 30px
+	);
 }
 
 button {

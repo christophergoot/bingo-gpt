@@ -8,7 +8,7 @@ function shuffle(array) {
 	return array;
 }
 
-function getRandomPartyEvents(count = 2) {
+function getRandomPartyEvents(count = bingoConfig.eventsCount) {
 	const shuffledEvents = shuffle([...bingoConfig.events]);
 	return shuffledEvents.slice(0, count);
 }
